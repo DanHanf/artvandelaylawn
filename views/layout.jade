@@ -1,0 +1,38 @@
+doctype 5
+html
+	head
+		title Art Vandelay Lawncare
+		link(rel='stylesheet', href='/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js')
+		script(src='/js/bootstrap.min.js')
+		link(rel='stylesheet', href='/css/flexslider.css')
+		link(rel='stylesheet', href='/css/jumbotron.css')
+		script(src='/js/jquery.flexslider-min.js')
+		link(rel='stylesheet', href='/css/style.css')
+		script
+			$(window).load(function() {
+				$('.flexslider').flexslider({slideshowSpeed:6000, animation:'fade'});
+			});
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+	body
+		
+		div(style='margin-top:-45px')
+			div.row(style='background-color: #eee; height:50px;padding-top:10px;')
+				div.span12 
+					h1.span6.offset3(style='color: #3FA539;') 
+						img(src='img/oakleaf.png', style='height:45px')
+						a(href='/')(style='padding:5px;') art vandelay lawncare
+					p
+					ul.masthead-links.span3.offset1
+						li
+							a(href='/about') about
+						li
+							a(href='/pricing') pricing
+						li
+							a(href='/contact') contact
+			div.container
+				div.row
+					div.span12
+						block content
+			include footer

@@ -1,0 +1,68 @@
+extends layout
+
+block content
+	div.row
+		h2 Pricing
+	div.row(style='padding-bottom:20px;')
+		h4 Find the right plan for your needs
+	div.row.span8.offset2
+		table.table.table-bordered.table-hover
+			tr(style='background-color:#B7FFB1;')
+				th Plan
+				th Mowing
+				th Fertilization
+				th Shrubbery
+				th Tree Care
+				th Price
+			tr
+				td Basic
+				td 
+					i.icon-ok
+				td 
+				td
+				td
+				td $82.00
+			tr
+				td Advanced
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td
+				td
+				td $110.00
+			tr
+				td Premium
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td
+				td $200.00
+			tr
+				td Deluxe
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td 
+					i.icon-ok
+
+				td $275.00
+				
+	div.span12(style='text-align:center; padding-bottom:20px; padding-top:20px;')
+		h4 Look at that! With all these options, there's got to be one that's just right for you.
+			div.row.offset6(style='padding-right:50px; padding-top:20px;')
+			a.btn.btn-large.btn-success(href='/contact') schedule an appointment

@@ -1,0 +1,30 @@
+extends layout
+
+block header			
+block content
+	div.container
+		div.row.span12(style='background-color:#eee;margin-top:10px;width:100%;')
+			div.flexslider
+				ul.slides
+					li.flex
+						img(src='img/slide/Slide1.jpg')(style='width:570px; height:374px;margin:auto;')
+					li.flex
+						img(src='img/slide/Slide2.jpg')(style='width:500px; height:374px;margin:auto;')
+					li.flex
+						img(src='img/slide/Slide3.jpg')(style='width:500px; height:374px;margin:auto;')
+		row.span10.offset1
+			div.span6
+				div
+					span
+						h1(style='color:#3FA539;display:inline;') beautiful 
+						h1(style='display:inline;') landscaping from 
+				div
+					span
+						h1(style='color:#3FA539;display:inline;') beautiful 
+						h1(style='display:inline;') people
+			div.span6.offset2
+				h3(style='text-align:center;') Art Vandelay is a name you can trust. Need more? 
+				h4(style='text-align:center; padding-bottom:10px;') Check out our pricing
+		div.row.offset6(style='padding-right:50px')
+			a.btn.btn-large.btn-success(href='/pricing') pricing
+			

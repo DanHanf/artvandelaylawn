@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	div.row
+		h2 Schedule an Appointment
+	div.row(style='padding-bottom:20px;')
+		h4 What works for you?
+
+
+	
+	form.form-horizontal
+		div.control-group
+			l.control-label name 
+			div.controls(for="inputName")
+				input(type="text", id="inputName")
+		div.control-group
+			l.control-label email
+			div.controls
+				input(type="text", id="inputEmail")
+		div.control-group
+			l.control-label phone 
+			div.controls
+				input(type="text", id="inputPhone")
+		div.control-group
+			l.control-label which plan?
+			div.controls
+				select
+					option Basic
+					option Advanced
+					option Premium
+					option Deluxe
+		div.control-group
+			l.control-label when are you thinking?
+			div.controls
+				input(type="date", id="inputCalender")
+		div.control-group
+			div.controls
+				input.btn(type="submit", value="send", onClick='this.form.reset()')
